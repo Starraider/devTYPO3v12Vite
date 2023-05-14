@@ -1,0 +1,23 @@
+{
+    "name": "skom/vite-base-sitepackage",
+    "type": "typo3-cms-extension",
+    "description": "Base sitepackage for TYPO3 based on Vite",
+    "homepage": "https://www.skom.de",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^12.4",
+        "typo3/cms-rte-ckeditor": "^12.4",
+        "typo3/cms-fluid-styled-content": "^12.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Skom\\ViteBaseSitepackage\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "vite_base_sitepackage"
+        }
+    }
+}

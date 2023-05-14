@@ -1,0 +1,74 @@
+{
+    "name": "skom/devtypo3v12vite",
+    "license": "GPL-2.0-or-later",
+    "version": "12.0.0",
+    "authors": [
+        {
+            "name": "Sven Kalbhenn",
+            "email": "sven@skom.de",
+            "homepage": "https://www.skom.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "helhum/dotenv-connector": "^3.0",
+        "skom/vite-base-sitepackage": "@dev",
+        "typo3/cms-adminpanel": "^12.4",
+        "typo3/cms-backend": "^12.4",
+        "typo3/cms-belog": "^12.4",
+        "typo3/cms-beuser": "^12.4",
+        "typo3/cms-core": "^12.4",
+        "typo3/cms-dashboard": "^12.4",
+        "typo3/cms-extbase": "^12.4",
+        "typo3/cms-extensionmanager": "^12.4",
+        "typo3/cms-filelist": "^12.4",
+        "typo3/cms-fluid": "^12.4",
+        "typo3/cms-fluid-styled-content": "^12.4",
+        "typo3/cms-form": "^12.4",
+        "typo3/cms-frontend": "^12.4",
+        "typo3/cms-impexp": "^12.4",
+        "typo3/cms-info": "^12.4",
+        "typo3/cms-install": "^12.4",
+        "typo3/cms-lowlevel": "^12.4",
+        "typo3/cms-opendocs": "^12.4",
+        "typo3/cms-recycler": "^12.4",
+        "typo3/cms-redirects": "^12.4",
+        "typo3/cms-reports": "^12.4",
+        "typo3/cms-rte-ckeditor": "^12.4",
+        "typo3/cms-scheduler": "^12.4",
+        "typo3/cms-seo": "^12.4",
+        "typo3/cms-setup": "^12.4",
+        "typo3/cms-tstemplate": "^12.4",
+        "typo3/cms-viewpage": "^12.4",
+        "typo3/minimal": "^12"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.31"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/*"
+        },
+        {
+            "type": "composer",
+            "url": "https://composer.typo3.org/"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true,
+            "ergebnis/composer-normalize": true,
+            "helhum/dotenv-connector": true
+        },
+        "platform": {
+            "php": "8.1.0"
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "ci:composer:normalize": "@composer normalize --dry-run",
+        "fix:composer": "@composer normalize"
+    }
+}
